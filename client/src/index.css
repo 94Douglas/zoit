@@ -1,0 +1,330 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(0, 0, 0);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.card-wrapper {
+  padding-top: 24px;
+  height: fit-content;
+  max-width: 765px;
+  border: 1px solid rgba(255, 255, 255, 0.445);
+  border-radius: 5px;
+  margin: 0 auto;
+  /* display: flex; */
+  /* margin-top: 16px; */
+}
+
+.flex {
+  display: flex;
+}
+
+.logoContainer {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 40px;
+}
+
+.h1-white-center {
+  text-align: center;
+  color: rgb(197, 197, 197);
+  font-family: "Comfortaa bold", cursive;
+}
+.noFont {
+  text-align: center;
+  color: rgb(197, 197, 197);
+}
+
+.h1-white-center-logoName {
+  text-align: center;
+  color: #f1faee;
+  font-family: "Comfortaa", cursive;
+  /* cursor: pointer; */
+
+  border-bottom: 5px solid rgba(255, 255, 255, 0.11);
+  border-radius: 5px;
+  transition: 0.2s ease-out;
+}
+.h1-white-center-logoName:hover {
+  padding: 15px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 2px solid white;
+  height: fit-content;
+  width: fit-content;
+  transition: 0.2s ease-in;
+}
+
+/* Frontend-joe navbar */
+
+.a-animationOne {
+  animation-delay: 0.1s;
+}
+.a-animationTwo {
+  animation-delay: 0.2s;
+}
+.a-animationThree {
+  animation-delay: 0.3s;
+}
+.a-animationFour {
+  animation-delay: 0.4s;
+}
+.a-animationFive {
+  animation-delay: 0.5s;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navbar,
+.navbar-burger,
+.menu,
+.background {
+  position: fixed;
+}
+
+/* .background {
+  z-index: 1;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background-image: url("assets/bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+} */
+
+.txt-white {
+  color: #f1faee;
+}
+
+body.open .background {
+  filter: blur(20px);
+}
+
+.navbar {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 72px;
+  padding-left: 20px;
+  padding-right: 72px;
+  background: #19191c;
+  color: #f9f9f9;
+  margin-bottom: 150px;
+}
+
+.navbar > button {
+  font-size: 28px;
+}
+
+.navbar-logo {
+  height: 25px;
+}
+
+.navbar-burger {
+  z-index: 3;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  background-image: url("./assets/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-left: 2px solid rgba(25, 25, 28, 0);
+  border-bottom: 2px solid rgba(25, 25, 28, 0);
+  transition: 0.2s ease-out;
+}
+.navbar-burger:hover {
+  border-left: 2px solid rgba(116, 33, 33, 0.473);
+  border-bottom: 2px solid rgba(116, 33, 33, 0.473);
+  border-bottom-left-radius: 30px;
+  transition: 0.2s ease-in;
+}
+
+body.open .navbar-burger {
+  background-image: url("./assets/close.svg");
+}
+
+.menu {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.945);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+body.open .menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu > a {
+  color: #f9f9f9;
+  font-size: 32px;
+  font-family: "Euclid Circular A";
+  text-decoration: none;
+}
+
+body.open .menu > a {
+  animation: appear 0.3s both;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    translate: 0 50px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* --------------------------------------------------------------------------- */
+.footer-wrapper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 72px;
+  background: #19191c;
+}
+
+.footer {
+  margin-top: 32px;
+  margin: 0 auto;
+  color: rgb(197, 197, 197);
+}
+
+/* From uiverse.io by @gagan-gv */
+.card {
+  width: 200px;
+  height: fit-content;
+  background: #07182e5e;
+  border-radius: 5px;
+  text-align: center;
+  color: #f0f0f0;
+  font-family: inherit;
+  z-index: 1;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.h5-mr-b {
+  padding-bottom: 16px;
+}
+
+.bold {
+  font: bold;
+}
+
+.line {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.445);
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.img {
+  display: flex;
+  /* margin: 60px auto 10px auto; */
+  margin: 0 auto;
+  width: 75px;
+  height: 75px;
+  border: 1px solid #f0f0f0;
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  z-index: 99;
+  background-color: #152f50;
+}
+
+p {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+h1 {
+  padding: 5px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+svg {
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.card:hover .img {
+  transform: scale(1.1);
+  border: 1px solid #f0f0f0;
+}
+
+.card:hover h1,
+.card:hover p {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  width: fit-content;
+}
+
+.portfolio-wrapper {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  max-width: 500px;
+  width: 250px;
+  max-height: 700px;
+  height: 276px;
+  background-color: #152f50;
+  border-radius: 10px;
+  transition: 0.2s ease-out;
+}
+.portfolio-wrapper:hover {
+  width: 270px;
+  height: 296px;
+  transition: 0.2s ease-in;
+}
