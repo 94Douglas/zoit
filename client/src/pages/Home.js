@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className="container d-flex">
       <div className="card-wrapper">
         <h2 className="noFont">
           Är du som privatperson, företag eller föreningen på jakt efter någon

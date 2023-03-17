@@ -7,13 +7,15 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
+import LeftInfo from "./components/LeftInfo/LeftInfo";
 
 function App() {
   return (
-    <>
+    <div className="">
       <Router>
         <div>
           <NavigationBar />
+          {/* <LeftInfo /> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -24,7 +26,7 @@ function App() {
           <Footer />
         </div>
       </Router>
-    </>
+    </div>
   );
 }
 
