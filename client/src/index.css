@@ -502,7 +502,7 @@ left: 85%;
   opacity: 0;
 }
 
-/* #head1{
+#head1{
   -webkit-animation: fadeOut 1 5s ease-in;
   -moz-animation: fadeOut 1 5s ease-in;
   -o-animation: fadeOut 1 5s ease-in;
@@ -518,7 +518,7 @@ left: 85%;
   -moz-animation-delay: 6s;
   -o-animation-delay: 6s;
   animation-delay: 6s;
-} */
+}
 
 /* #head3{
   -webkit-animation: fadeOut 1 5s ease-in;
@@ -588,7 +588,7 @@ left: 85%;
   to{opacity: 1;}
 }
 
-/* @-webkit-keyframes fadeOut{
+@-webkit-keyframes fadeOut{
   0%{opacity: 0;}
   30%{opacity: 1;}
   80%{opacity: .9;}
@@ -642,4 +642,4 @@ left: 85%;
   30%{opacity: 1;}
   80%{opacity: .9;}
   100%{opacity: 1;}
-} */
+}
