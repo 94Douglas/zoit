@@ -5,25 +5,25 @@ import MissingImg from "../assets/noimage.png";
 const Portfolio = () => {
   return (
     <div className="container">
-      <h2 className="noFont noFlex">Portfolio</h2>
+      <h2 className="noFont noFlex">Våra Kunder Vi Skapat Hemsida Till Från Grunden</h2>
       <div className="card-wrapper flex">
         <div className="portfolio-wrapper">
           <img src={MissingImg} className="img" alt="" />
-          <h1 className="noFont">Rubrik</h1>
-          <h4 className="noFont">Kort Beskrivning</h4>
+          <h1 className="noFont">Olovs Hage Samfällighet</h1>
+          <h5 className="noFont">En samfällighet var i behov av en hemsida de kunde lägga ut uppgifter till styrelsen och årsredovisning</h5>
 
-          <Link to="#">
-            <h5 className="noFont">Länk Till Projekt</h5>
-          </Link>
+          <a href="https://olovshage.se/" target="_blank" rel="newTab">
+            <h5 className="noFont">Till Hemsidan</h5>
+          </a>
         </div>
         <div className="portfolio-wrapper">
           <img src={MissingImg} className="img" alt="" />
-          <h1 className="noFont">Rubrik</h1>
-          <h4 className="noFont">Kort Beskrivning</h4>
+          <h1 className="noFont">BRF Hällungen 2</h1>
+          <h5 className="noFont">Var i behov av en hemsida där de kunde ladda upp bland annat årsredovisning</h5>
 
-          <Link to="#">
-            <h5 className="noFont">Länk Till Projekt</h5>
-          </Link>
+          <a href="https://brfhallungen.se/" target="_blank" rel="newTab">
+            <h5 className="noFont">Till Hemsidan</h5>
+          </a>
         </div>
       </div>
     </div>

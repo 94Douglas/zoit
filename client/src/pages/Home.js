@@ -6,30 +6,20 @@ const Home = () => {
       <div className="container">
         <div className="card-wrapper ">
           <p className="header">
-            Är du som privatperson, företag eller föreningen på jakt efter någon
-            som kan skapa en hemsida för ett sjyst pris?!
+            Är du och ditt företag i stort behov av en hemsida?
           </p>
           <p className="header">
-            Jag gör allt från lätta hemsidor till mer avancerade. Vi börjar med
-            ett första möte där vi går igenom era önskemål. <br />
-            Det är viktigt för mig att mina kunder känner sig trygga med mig som
-            konsult samt att dom får det dem önskar. <br />
-            Pris varierar beroende på vad man vill ha för funktionalitet. Men
-            eftersom jag är i början på min karriär kan jag garantera ett
-            billigare pris än vanliga byråer. <br />
-            Min karriär har precis startat men det här är bara början. Tveka
-            inte att höra av er så spånar vi vidare!
+            Vi på ZeroOne IT finns här för just dig och din framtida hemsida.
+            <br />
+            Vi skapar allt från grunden och ni får möjlighet att få er hemsida just utifrån era önskemål.
+          </p>
+          <p className="header">
+            Vi är låga i pris, vi ligger på 4000-7000kr, men allt beror på omfattningen på hemsidan.
+            Är hemsidan mer avancerad, då stiger priset. Vårt mål är att hålla priset så billigt som möjligt, därför sticker vi ut från mängden.
+            <br/>
+
           </p>
         </div>
-        <div className="light x1"></div>
-        <div className="light x2"></div>
-        <div className="light x3"></div>
-        <div className="light x4"></div>
-        <div className="light x5"></div>
-        <div className="light x6"></div>
-        <div className="light x7"></div>
-        <div className="light x8"></div>
-        <div className="light x9"></div>
       </div>
     </div>
   );
