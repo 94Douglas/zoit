@@ -12,32 +12,40 @@ body {
     height: 100vh;
     font-weight: 100;
     background: radial-gradient(#a23943,#1f1013);
-    -webkit-overflow-Y: hidden;
-    -moz-overflow-Y: hidden;
-    -o-overflow-Y: hidden;
+    /* -webkit-overflow-Y: hidden; */
+    /* -moz-overflow-Y: hidden; */
+    /* -o-overflow-Y: hidden; */
     overflow-y: hidden;
-    -webkit-animation: fadeIn 1 1s ease-out;
+    /* -webkit-animation: fadeIn 1 1s ease-out;
     -moz-animation: fadeIn 1 1s ease-out;
     -o-animation: fadeIn 1 1s ease-out;
-    animation: fadeIn 1 1s ease-out;
+    animation: fadeIn 1 1s ease-out; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  overflow-y: scroll;
+
+}
   
 .container {
   margin-top: 150px;
   margin-bottom: 150px;
+  padding-bottom: 150px;
+  /* overflow-y: scroll; */
 }
 
 .card-wrapper {
   padding-top: 24px;
   height: fit-content;
   max-width: 765px;
+  background-color: #00000077;
   /* border: 1px solid rgba(255, 255, 255, 0.445); */
-  border-radius: 5px;
+  /* border-radius: 5px; */
   margin: 0 auto;
   /* display: flex; */
   /* margin-top: 16px; */
@@ -298,7 +306,7 @@ body.open .menu > a {
 }
 
 p {
-  opacity: 0;
+  opacity: 1;
   transition: all 0.5s;
 }
 
@@ -558,10 +566,11 @@ left: 85%;
 } */
 
 .header{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* position: fixed; */
+  text-align: center;
+  /* top: 40%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, 50%); */
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
   color: white;

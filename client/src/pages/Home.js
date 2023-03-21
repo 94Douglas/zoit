@@ -2,14 +2,14 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
+    <div className="scroll">
       <div className="container">
-        <div className="card-wrapper">
-          <p id="head1" className="header">
+        <div className="card-wrapper ">
+          <p className="header">
             Är du som privatperson, företag eller föreningen på jakt efter någon
             som kan skapa en hemsida för ett sjyst pris?!
           </p>
-          <p id="head2" className="header">
+          <p className="header">
             Jag gör allt från lätta hemsidor till mer avancerade. Vi börjar med
             ett första möte där vi går igenom era önskemål. <br />
             Det är viktigt för mig att mina kunder känner sig trygga med mig som
@@ -21,16 +21,16 @@ const Home = () => {
             inte att höra av er så spånar vi vidare!
           </p>
         </div>
+        <div className="light x1"></div>
+        <div className="light x2"></div>
+        <div className="light x3"></div>
+        <div className="light x4"></div>
+        <div className="light x5"></div>
+        <div className="light x6"></div>
+        <div className="light x7"></div>
+        <div className="light x8"></div>
+        <div className="light x9"></div>
       </div>
-      <div className="light x1"></div>
-      <div className="light x2"></div>
-      <div className="light x3"></div>
-      <div className="light x4"></div>
-      <div className="light x5"></div>
-      <div className="light x6"></div>
-      <div className="light x7"></div>
-      <div className="light x8"></div>
-      <div className="light x9"></div>
     </div>
   );
 };
