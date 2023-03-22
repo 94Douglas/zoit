@@ -7,7 +7,8 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
-import LeftInfo from "./components/LeftInfo/LeftInfo";
+import "semantic-ui-css/semantic.min.css";
+
 
 function App() {
   return (
