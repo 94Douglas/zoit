@@ -27,7 +27,7 @@ body {
   
 .container {
   margin-top: 150px;
-  margin-bottom: 150px;
+  /* margin-bottom: 150px; */
   padding-bottom: 150px;
 }
 
@@ -257,7 +257,7 @@ body.open .menu > a {
   text-align: center;
   color: #f0f0f0;
   font-family: inherit;
-  z-index: 1;
+  /* z-index: 1; */
   margin: 0 auto;
   margin-bottom: 24px;
 }
@@ -288,7 +288,7 @@ body.open .menu > a {
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
-  z-index: 99;
+  /* z-index: 99; */
   background-color: #152f50;
 }
 
@@ -392,6 +392,16 @@ a {
 .portfolio-wrapper:hover {
   width: 270px;
   height: 296px;
+  transition: 0.2s ease-in;
+}
+
+.hovering-card {
+  transition: 0.2s ease-out;
+}
+
+.hovering-card:hover {
+  width: 270px;
+  /* height: 296px; */
   transition: 0.2s ease-in;
 }
 

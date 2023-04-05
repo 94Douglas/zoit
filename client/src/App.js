@@ -9,14 +9,12 @@ import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import "semantic-ui-css/semantic.min.css";
 
-
 function App() {
   return (
     <div className="">
       <Router>
         <div>
           <NavigationBar />
-
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
