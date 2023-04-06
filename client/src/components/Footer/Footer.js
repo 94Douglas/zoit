@@ -5,9 +5,11 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div className="footer-wrapper">
-      <h3 className="footer">
-        Copyright <AiOutlineCopyrightCircle /> 2022 - {year} By Zero One IT
-      </h3>
+      <h5 className="footer">
+        Copyright{" "}
+        <AiOutlineCopyrightCircle style={{ height: "30px", width: "30px" }} />{" "}
+        2022 - {year} By Zero One IT
+      </h5>
     </div>
   );
 };

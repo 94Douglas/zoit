@@ -1,5 +1,4 @@
 import React from "react";
-import NavbarLogo from "../NavbarLogo/NavbarLogo";
 import { Link } from "react-router-dom";
 
 const NavigationBar = () => {

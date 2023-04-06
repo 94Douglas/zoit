@@ -13,6 +13,7 @@ const Portfolio = () => {
               width: "70px",
               margin: "0px auto",
             }}
+            alt=""
           />
           <div className="card-body">
             <h5 className="card-title mb-4">Olovs Hage Samfällighet</h5>
@@ -24,14 +25,14 @@ const Portfolio = () => {
               href="https://olovshage.se/"
               className="btn btn-primary"
               target="_blank"
-              rel="newTab"
+              rel="noreferrer"
             >
               Till Hemsidan
             </a>
           </div>
         </div>
       </div>
-      <div className="col-sm-4">
+      <div className="col-md-4">
         <div className="card h-100 hovering-card">
           <img
             src={MissingImg}
@@ -40,6 +41,7 @@ const Portfolio = () => {
               width: "70px",
               margin: "0px auto",
             }}
+            alt=""
           />
           <div className="card-body h-100">
             <h5 className="card-title mb-4">BRF Hällungen 2</h5>
@@ -51,7 +53,7 @@ const Portfolio = () => {
               href="https://brfhallungen.se/"
               className="btn btn-primary mt-4"
               target="_blank"
-              rel="newTab"
+              rel="noreferrer"
             >
               Till Hemsidan
             </a>

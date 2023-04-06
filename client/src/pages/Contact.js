@@ -1,9 +1,9 @@
+import emailjs from "emailjs-com";
 import React from "react";
 import { Link } from "react-router-dom";
-import linkedIn from "../assets/linkedin.png";
-import { Form, Input, TextArea, Button } from "semantic-ui-react";
-import emailjs from "emailjs-com";
+import { Button, Form, Input, TextArea } from "semantic-ui-react";
 import Swal from "sweetalert2";
+import linkedIn from "../assets/linkedin.png";
 import Me from "../assets/meTransparent.png";
 
 const SERVICE_ID = "service_5bynzux";
@@ -56,6 +56,7 @@ const Contact = () => {
                 width: "77px",
                 height: "77px",
               }}
+              alt=""
             />
           </div>
           <h1>Douglas Schoug</h1>
@@ -87,6 +88,7 @@ const Contact = () => {
                   backgroundColor: "white",
                   borderRadius: "50%",
                 }}
+                alt=""
               />
             </Link>
           </p>
