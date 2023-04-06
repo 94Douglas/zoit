@@ -1,14 +1,13 @@
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavigationBar from "./components/NavigationBar/NavigationBar";
-import Footer from "./components/Footer/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Contact from "./pages/Contact";
-import Portfolio from "./pages/Portfolio";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
-
+import "./App.css";
+import Footer from "./components/Footer/Footer";
+import NavigationBar from "./components/NavigationBar/NavigationBar";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+import Services from "./pages/Services";
 function App() {
   return (
     <div className="">
