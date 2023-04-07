@@ -92,7 +92,7 @@ const Contact = () => {
               />
             </Link>
           </p>
-          <h5 className="h5-mr-b">VD</h5>
+          <h5 className="h5-mr-b">Grundare</h5>
         </div>
         <div className="input-wrapper">
           <Form onSubmit={handleOnSubmit}>

@@ -17,7 +17,6 @@ const NavigationBar = () => {
       <nav className="menu">
         <a href="/">Hem</a>
         <a href="/about">Om</a>
-        <a href="/services">Tjänster</a>
         <a href="/contact">Kontakta Oss</a>
         <a href="/portfolio">Portfolio</a>
       </nav>

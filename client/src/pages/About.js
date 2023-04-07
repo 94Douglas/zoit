@@ -8,21 +8,29 @@ const About = () => {
       </div>
       <div className="card-wrapper mt-5">
         <p className="header">
-          Vi bygger och vidareutvecklar din hemsida utifrån din idé till ett
-          billigt pris, jämfört med andra.
+          ZeroOne IT är en webbyrå som utvecklar och vidareutvecklar din hemsida
+          utifrån din idé.
         </p>
         <p className="header">
-          Vi vill göra det så billigt som möjligt för er, inom den ramen att ni
-          ska ha råd med en hemsida. Såklart utlovas en professionell hemsida åt
-          er.
+          Vi brinner för att utveckla hemsidor och funktionalitet som händer
+          bakom hemsidan. Vi utför vårt jobb med noggrannhet och dokumentation
+          är en självklarhet.
         </p>
+
         <p className="header">
-          Vi sätter alltid dig som kund i fokus, kunden bestämmer, vet sin idé
-          och har alltid rätt. Vi kan bara förverkliga den.
+          Alla våra jobb gör vi till ett lågt pris som passar dig och din
+          verksamhet. Nöjda kunder är viktigast för oss som vi alltid sätter i
+          fokus. Vi vill förverkliga er dröm och sätta färg på kartan.
         </p>
+
         <p className="header">
           När ni hör av er till oss gällande er idé, får ni ett kostnadsfritt
           prisförslag.
+        </p>
+
+        <p className="header">
+          Ta kontakt med oss redan idag, ert projekt kan bli betydligt mycket
+          billigare än vad ni hade tänkt er!
         </p>
       </div>
     </div>
