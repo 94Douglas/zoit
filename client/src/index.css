@@ -26,10 +26,20 @@ body {
 }
   
 .container {
-  margin-top: 150px;
+  /* margin-top: 150px; */
   /* margin-bottom: 150px; */
   padding-bottom: 150px;
+  margin: 150px auto;
 }
+
+.container-portfolio {
+  /* padding-bottom: 150px; */
+  margin: 150px auto;
+  /* background-color: #152f503d; */
+  /* box-shadow: 15px 10px 15px  #00000031; */
+}
+
+
 
 .card-wrapper {
   padding-top: 24px;
@@ -37,6 +47,7 @@ body {
   max-width: 765px;
   margin: 0 auto;
 }
+
 
 .flex {
   display: flex;
