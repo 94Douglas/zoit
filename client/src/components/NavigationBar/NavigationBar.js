@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 const NavigationBar = () => {
   const toggleMenu = () => {
     document.body.classList.toggle("open");
@@ -14,6 +13,7 @@ const NavigationBar = () => {
           <h3 className="h1-white-center-logoName">ZeroOne IT</h3>
         </Link>
       </nav>
+
       <nav className="menu">
         <a href="/">Hem</a>
         <a href="/about">Om</a>

@@ -117,6 +117,7 @@ button {
 
 .navbar,
 .navbar-burger,
+.menu-logo,
 .menu,
 .background {
   position: fixed;
@@ -128,7 +129,7 @@ button {
   left: -10%;
   width: 120%;
   height: 120%;
-  background-image: url("assets/bg.jpeg");
+  background-image: url("./assets/bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -190,6 +191,11 @@ body.open .navbar-burger {
   background-image: url("./assets/close.svg");
 }
 
+body.open .menu-logo {
+  opacity: 1;
+  visibility: visible;
+}
+
 .menu {
   z-index: 2;
   top: 0;
@@ -206,6 +212,7 @@ body.open .navbar-burger {
   visibility: hidden;
   transition: 0.5s;
 }
+
 
 body.open .menu {
   opacity: 1;
