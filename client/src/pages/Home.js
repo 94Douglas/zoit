@@ -1,3 +1,4 @@
+import SendRoundedIcon from "@mui/icons-material/SendRounded";
 import emailjs from "emailjs-com";
 import React from "react";
 import { Button, Form, Input, TextArea } from "semantic-ui-react";
@@ -100,7 +101,7 @@ const Home = () => {
               required
             />
             <Button type="submit" color="green">
-              Skicka
+              Skicka <SendRoundedIcon style={{ color: "#E5F6E9" }} />
             </Button>
           </Form>
         </div>

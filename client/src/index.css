@@ -71,6 +71,8 @@ body {
   color: #f1faee;
   font-family: "Comfortaa", cursive;
   /* cursor: pointer; */
+  top: 0;
+  left: 0;
 
   border-bottom: 5px solid rgba(255, 255, 255, 0.11);
   border-radius: 5px;
@@ -140,40 +142,168 @@ body.open .background {
   filter: blur(20px);
 }
 
-.navbar {
+.headerImg {
+  width: 25%;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 48px;
+  color: #f1faee;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.headers {
+  position: relative;
+  text-align: center;
+  background: #19191c;
+  color: white;
+}
+
+.mt {
+  /* margin-top: 5%; */
+  position: relative;
+}
+
+.logo {
+  position: relative;
   z-index: 1;
+
+  /* z-index: 3; */
+  top: 0;
+  right: 0;
+  display: grid;
+  vertical-align: top;
+  margin-left: 15px;
+  margin-top: 10px;
+  color: #f1faee;
+  font-family: "Comfortaa", cursive;
+  border-bottom: 5px solid rgba(255, 255, 255, 0.11);
+  border-radius: 5px;
+  transition: 0.2s ease-out;
+  width: fit-content;
+}
+
+.logo:hover {
+  padding: 15px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 2px solid white;
+  height: fit-content;
+  width: fit-content;
+  transition: 0.2s ease-in;
+}
+
+.inner-header {
+  height: 30vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  margin-bottom: -2px;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.contents {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .contents {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.navbar {
+  position: relative;
+
   top: 0;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  height: 150px;
-  padding-left: 20px;
-  padding-right: 72px;
-  background: #19191c;
+
   color: #000000;
-  margin-bottom: 150px;
-  --size: 50px;
-  --p: 25px;
-  --R: 55.9px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/;
-
-  height: 200px;
-
-  -webkit-mask: radial-gradient(
-        var(--R) at 50% calc(100% - (var(--size) + var(--p))),
-        #19191c 99%,
-        #0000 101%
-      )
-      calc(50% - 2 * var(--size)) 0 / calc(4 * var(--size)) 100%,
-    radial-gradient(
-        var(--R) at 50% calc(100% + var(--p)),
-        #0000 99%,
-        #19191c 101%
-      )
-      50% calc(100% - var(--size)) / calc(4 * var(--size)) 100% repeat-x;
-  background: linear-gradient(90deg, #19191c, #19191c);
-  border: none;
 }
 
 .navbar > button {
@@ -185,13 +315,15 @@ body.open .background {
 }
 
 .navbar-burger {
+  position: relative;
+
   z-index: 3;
   top: 0;
   right: 0;
   display: grid;
   place-items: center;
   width: 72px;
-  height: 72px;
+  height: 58px;
   background-image: url("./assets/menu.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -388,11 +520,6 @@ h1 {
   min-height: 250px;
   max-width: 500px;
   min-width: 500px;
-}
-
-svg {
-  padding: 0 5px;
-  cursor: pointer;
 }
 
 .card:hover .img {
