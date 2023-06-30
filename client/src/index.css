@@ -116,23 +116,64 @@ button {
 .navbar,
 .navbar-burger,
 .menu-logo,
-.menu,
-.background {
+.menu {
   position: fixed;
 }
 
-.background {
-  z-index: 1;
-  top: -10%;
-  left: -10%;
-  width: 120%;
-  height: 120%;
-  background-image: url("./assets/bg.svg");
+/* .background {
+  z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.5s;
+  position: relative;
+} */
+
+.background-container {
+  box-shadow: 0 10px 10px -10px rgb(0, 0, 0) inset;
+
 }
+
+.background {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  background: url('./assets/headerbg.png') center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.shadow-b {
+  
+  /* box-shadow: inset 0px 100px 100px -90px rgba(0,0,0,0.7); */
+}
+
+.background:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('./assets/headerbg.png') center center no-repeat;
+  background-size: cover;
+  /* filter: blur(2px); */
+  transform: scale(1.1); /* This line ensures that there are no sharp edges */
+  z-index: 2;
+}
+
+.background:after {
+  content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+  z-index: 3;
+}
+
 
 .txt-white {
   color: #000000;
@@ -395,7 +436,7 @@ body.open .menu > a {
 }
 
 /* --------------------------------------------------------------------------- */
-.footer-wrapper {
+/* .footer-wrapper {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -412,6 +453,82 @@ body.open .menu > a {
   margin-top: 32px;
   margin: 0 auto;
   color: rgb(0, 0, 0);
+} */
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.footer-section {
+  margin: 20px;
+}
+
+.footer-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-list, .social-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-list li, .social-list li {
+  margin-bottom: 10px;
+}
+
+.footer-list a, .social-list a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-list a:hover, .social-list a:hover {
+  color: #ddd;
+}
+
+.social-list {
+  display: flex;
+  gap: 10px;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+footer form button {
+  padding: 10px;
+  font-size: 1em;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+footer form button:hover {
+  background-color: #666;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .footer {
+      grid-template-columns: 1fr;
+  }
 }
 
 /* From uiverse.io by @gagan-gv */

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import headerBg from "../../assets/headerimg1-removebg-preview.png";
+import headerBg from "../../assets/headerbg.png";
 
 const NavigationBar = () => {
   const toggleMenu = () => {
@@ -17,7 +17,7 @@ const NavigationBar = () => {
           </Link>
           <button className="navbar-burger" onClick={toggleMenu}></button>
         </nav>
-        <div className="inner-header flex">
+        {/* <div className="inner-header flex">
           <h1>Vi sätter ditt företag på kartan</h1>
           <div className="headerImg">
             <img
@@ -29,9 +29,12 @@ const NavigationBar = () => {
               src={headerBg}
             />
           </div>
+        </div> */}
+        <div className="background shadow-b">
+          <img src={headerBg} alt="header background" />
         </div>
 
-        <div>
+        {/* <div>
           <svg
             className="waves"
             xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +71,7 @@ const NavigationBar = () => {
               <use href="#gentle-wave" x="48" y="7" fill="#fff" />
             </g>
           </svg>
-        </div>
+        </div> */}
       </div>
 
       <nav className="menu">
